@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sliders img {
+  width: 100%;
+  height: 500px;
+  transition: all 0.5s;
+}
+
+
+.slider_btn{
+    text-align: center;
+    padding-top:20px;
+}
+
+.slider_btn button{
+    border: none ;
+    background-color: orange;
+    padding:10px 0px;
+    width:120px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.slider_btn button:hover{
+  border: none ;
+  background-color: #bd7e09;
+
+}
