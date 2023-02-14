@@ -4,11 +4,12 @@ var allImages = [
     '../img/slider-02.jpg',
     '../img/slider-03.jpg'
 ];
+
 var slider = document.querySelector('.sliders img');
 var prev = document.querySelector('.prev')
 var next = document.querySelector('.next')
 
-
+// next button func
 next.addEventListener('click', function(){
     var current = slider.getAttribute('src')
     var currentIndex = allImages.indexOf(current)
@@ -17,17 +18,16 @@ next.addEventListener('click', function(){
     }else{
         slider.src =allImages[currentIndex + 1]
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    console.log(current);
+})
+
+// previous button 
+prev.addEventListener('click', function(){
+    var current = slider.getAttribute('src')
+    var currentIndex = allImages.indexOf(current)
+    if(currentIndex == 0){
+        slider.src =allImages[allImages.length - 1]
+    }else{
+        slider.src =allImages[currentIndex - 1]
+    }
 })
 
