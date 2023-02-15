@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cart Summary</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>Calculate Product Summary</header>
+    <div class="layout container">
+        <div class="item_box">
+            <h3 class="se_title">Products</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body">
+                    <tr>
+                        <td>1</td>
+                        <td>Apple</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Banana</td>
+                        <td>500</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="product_adding_form">
+                <h3 class="se_title">Add New Product</h3>
+                <form id="product_form">
+                    <input id="product_name" type="text" placeholder="Enter Product Name">
+                    <input id="product_price" type="number" placeholder="Price">
+                    <input type="submit" value="Add">
+                </form>
+
+
+                <h3 class="se_title">Discount(%)</h3>
+                <form id="discount_form">
+                    <input id="product_discount" type="text" placeholder="Enter Discount Percentage">
+                    <input type="submit" value="Apply">
+                </form>
+            </div>
+        </div>
+        <div class="summary">
+            <h3 class="se_title">Summary</h3>
+            <div class="summary_box">
+                <ul>
+                    <li>
+                        <p>Net Price:</p>
+                        <p id="net_price">00</p>
+                    </li>
+                    <li>
+                        <p>Total Items:</p>
+                        <p id="total_items">00</p>
+                    </li>
+                    <li>
+                        <p>Discount:</p>
+                        <p id="discount">00</p>
+                    </li>
+                    <li>
+                        <p>Total Price:</p>
+                        <p id="total_price">00</p>
+                    </li>
+                </ul>
+                <div class="btn_box">
+                    <button class="reset_btn">Cancel</button>
+                    <button class="payment_btn">Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
