@@ -1,6 +1,27 @@
 var formSubmit = document.getElementById('product_form')
 var allProducts = []
 
+formSubmit.addEventListener('submit', function(event){
+    event.preventDefault();
+
+    var productName = document.getElementById('product_name').value;
+    var productPrice = document.getElementById('product_price').value;
+    var productPriceHide = document.getElementById('product_name');
+    var productNameHide = document.getElementById('product_price');
+    var product={
+        name: productName,
+        price:productPrice
+    }
+    allProducts[allProducts.length]=product;
+    productPriceHide.value=""
+    productNameHide.value=""
+    displayProduct()
+    displayProductSummary()
+})
+
+
+
+// added items 
 function displayProduct(){
     var tableBody = document.getElementById('table_body')
     tableBody.innerHTML = null
@@ -19,28 +40,57 @@ function displayProduct(){
     }
 }
 
-
-
-
-
-
-
-
-
-
-formSubmit.addEventListener('submit', function(event){
-    event.preventDefault();
-
-    var productName = document.getElementById('product_name').value;
-    var productPrice = document.getElementById('product_price').value;
-    var productPriceHide = document.getElementById('product_name');
-    var productNameHide = document.getElementById('product_price');
-    var product={
-        name: productName,
-        price:productPrice
+// product summary
+function displayProductSummary(){
+    var netPriceBox=document.getElementById("net_price")
+    var totalItems=document.getElementById("total_items")
+  
+    for(var i=0; i < allProducts.length; i++){
+    
+        totalSummary.netPrice=totalSummary.netPrice+parseInt(allProducts[i].price)
     }
-    allProducts[allProducts.length]=product;
-    productPriceHide.value=""
-    productNameHide.value=""
-    displayProduct()
+
+    netPriceBox.innerText= totalSummary.netPrice
+    totalItems.innerText=allProducts.length
+}
+
+// discount product 
+var formDiscount = document.getElementById("discount_form")
+
+formDiscount.addEventListener("submit",function (e) {
+    e.preventDefault();
+var totalPriceBox = document.getElementById("total_price")
+var discount = document.getElementById("discount")
+var discountPercentage = document.getElementById("product_discount").value
+
+// if(discountPercentage!==""){
+// discountPercentage=parseInt(discountPercentage)
+//     totalSummary.discount=totalSummary.netPrice*(discountPercentage/100)
+//     discount.innerText=totalSummary.discount
+//     totalSummary.totalPrice=totalSummary.netPrice-totalSummary.discount
+//     totalPriceBox.innerText=totalSummary.totalPrice
+// }
+
+discountPercentage=parseInt(discountPercentage)
+console.log(discountPercentage);
+if(isNaN(discountPercentage)){
+    alert("Discount")
+}else{
+    totalSummary.discount=totalSummary.netPrice*(discountPercentage/100)
+    discount.innerText=totalSummary.discount
+    totalSummary.totalPrice=totalSummary.netPrice-totalSummary.discount
+    totalPriceBox.innerText=totalSummary.totalPrice
+}
 })
+
+// payment successs 
+
+
+
+
+
+
+
+
+
+
