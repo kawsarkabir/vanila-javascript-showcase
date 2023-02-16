@@ -1,5 +1,11 @@
 var formSubmit = document.getElementById('product_form')
 var allProducts = []
+var totalSummary={
+    netPrice:0,
+    totalItems:0,
+    discount:0,
+    totalPrice:0
+}
 
 formSubmit.addEventListener('submit', function(event){
     event.preventDefault();
@@ -57,19 +63,14 @@ function displayProductSummary(){
 // discount product 
 var formDiscount = document.getElementById("discount_form")
 
-formDiscount.addEventListener("submit",function (e) {
-    e.preventDefault();
+formDiscount.addEventListener("submit",function (event) {
+    event.preventDefault();
 var totalPriceBox = document.getElementById("total_price")
 var discount = document.getElementById("discount")
 var discountPercentage = document.getElementById("product_discount").value
+var discountPercentageHide = document.getElementById("product_discount");
+discountPercentageHide.value=''
 
-// if(discountPercentage!==""){
-// discountPercentage=parseInt(discountPercentage)
-//     totalSummary.discount=totalSummary.netPrice*(discountPercentage/100)
-//     discount.innerText=totalSummary.discount
-//     totalSummary.totalPrice=totalSummary.netPrice-totalSummary.discount
-//     totalPriceBox.innerText=totalSummary.totalPrice
-// }
 
 discountPercentage=parseInt(discountPercentage)
 console.log(discountPercentage);
@@ -84,6 +85,11 @@ if(isNaN(discountPercentage)){
 })
 
 // payment successs 
+var paymentBtn=document.querySelector(".payment_btn")
+paymentBtn.addEventListener("click",function(){
+    alert("Payment success")
+})
+
 
 
 
