@@ -51,6 +51,7 @@ function displayProductSummary(){
     var netPriceBox=document.getElementById("net_price")
     var totalItems=document.getElementById("total_items")
   
+    totalSummary.netPrice = 0
     for(var i=0; i < allProducts.length; i++){
     
         totalSummary.netPrice=totalSummary.netPrice+parseInt(allProducts[i].price)
