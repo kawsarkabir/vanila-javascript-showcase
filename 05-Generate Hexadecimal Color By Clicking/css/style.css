@@ -25,16 +25,19 @@ body {
 }
 
 input[type='text'],
-input[type='text']:disabled {
+input[type='text']:disabled,
+.copy-btn {
 	background-color: #fff;
-	color: #999;
+	color: #000;
+    font-weight: 600;
 	border: #000;
-	padding: 0.5rem 1rem;
+	padding: 1rem 1.5rem;
 	border-radius: 0.25rem;
+	box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-button {
-	padding: 1rem 3rem;
+.change-btn {
+	padding: 0.75rem 2rem;
 	outline: none;
 	background-color: #000;
 	color: #fff;
@@ -46,7 +49,7 @@ button {
 	cursor: pointer;
 }
 
-button:hover {
+.change-btn:hover {
 	background-color: #fff;
 	color: #000;
 	border: 1px solid #000;
@@ -56,4 +59,8 @@ h1 {
 	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
 		1px 1px 0 #fff;
 	text-align: center;
+}
+
+.copy-btn {
+	cursor: pointer;
 }

@@ -5,11 +5,18 @@ function main(){
     const root = document.getElementById('root');
     const btn = document.getElementById('change-btn');
     const output = document.getElementById('output');
+    const changeBtn = document.getElementById('change-btn');
+    const copyBtn = document.getElementById('copy-btn');
     
     btn.addEventListener('click', function(){
         const bgColor = generateHexColor();
         root.style.backgroundColor = bgColor;
         output.value = bgColor;
+    })
+
+    // clickboad here 
+    copyBtn.addEventListener('click', function(){
+        navigator.clipboard.writeText(output.value)
     })
 
 }
