@@ -2,6 +2,15 @@ window.onload = () =>{
     main();
 }
 function main(){
+    const root = document.getElementById('root');
+    const btn = document.getElementById('change-btn');
+    const output = document.getElementById('output');
+    
+    btn.addEventListener('click', function(){
+        const bgColor = generateHexColor();
+        root.style.backgroundColor = bgColor;
+        output.value = bgColor;
+    })
 
 }
 
