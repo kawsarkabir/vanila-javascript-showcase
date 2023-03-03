@@ -5,10 +5,10 @@ document.getElementById('login-btn').addEventListener('click' , function(){
     const passwordField = document.getElementById('password-field')
     const password = passwordField.value;
 
-    if(email == 'k2@gmail.com' && password == 'kawsark2'){
-        console.log('asol malik');
+    if(email == 'k2@gmail.com' && password == 'k2'){
+        window.location ='bank.html'
     }
     else{
-        console.log('hack by unknow person');
+        alert('please a valid email and password')
     }
 })
