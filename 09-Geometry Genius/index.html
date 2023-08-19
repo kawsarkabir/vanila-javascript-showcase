@@ -116,15 +116,16 @@
                         <figure><img src="/images/ellipse.png" alt="Shoes" /></figure>
                         <div class="card-body text-center">
                           <h2 class="text-2xl text-center">Ellipse</h2>
-                          <p class="text-lg">  Area (A) = 0.5 * b * h</p>
+                          <p class="text-lg">  Area (A) = πab</p>
                           <p>
-                            <input class="border w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="" placeholder="base">
+                            <input class="border w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="major-axis" placeholder="major-axis">
                             <span class="ml-2">cm</span>
-                            <input class="border ml-2 w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="" placeholder="height">
+                            <input class="border ml-2 w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="minor-axis" placeholder="minor-axis">
                             <span class="ml-2">cm</span>
                           </p>
+                          <p class="text-xl">Area: <span id="ellipse-area">0</span> cm<sup>2</sup></p>
                           <div class="card-actions">
-                            <button class="btn bg-blue-400 text-white w-full mt-4">Calculate</button>
+                            <button onclick="calculateEllipseArea()" class="btn bg-blue-400 text-white w-full mt-4">Calculate</button>
                           </div>
                         </div>
                       </div>

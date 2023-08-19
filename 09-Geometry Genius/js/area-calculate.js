@@ -46,7 +46,13 @@ function calculatePentagonArea(){
     const area = 0.5 * p * b;
     setTextValue('pentagon-area', area)
 }
-
+// Ellipse
+function calculateEllipseArea(){
+    const majorAxis = getInputValue('major-axis');
+    const minorAxis = getInputValue('minor-axis');
+    const area = Math.round((Math.PI)) * majorAxis * minorAxis;
+    setTextValue('ellipse-area', area)
+}
 
 
 
