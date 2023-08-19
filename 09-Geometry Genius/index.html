@@ -36,7 +36,7 @@
                             <input class="border ml-2 w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="triangle-height" placeholder="height">
                             <span class="ml-2">cm</span>
                           </p>
-                          <p class="text-xl">Area: <span id="area-of-trianlge">0</span> cm<sup>2</sup></p>
+                          <p class="text-xl">Area: <span id="triangle-area">0</span> cm<sup>2</sup></p>
                           <div class="card-actions">
                             <button onclick="calculateTriangleArea()" class="btn bg-blue-400 text-white w-full mt-4">Calculate</button>
                           </div>
@@ -48,47 +48,50 @@
                           <h2 class="text-2xl text-center">Rectangle</h2>
                           <p class="text-lg">  Area (A) = w * I</p>
                           <p>
-                            <input class="border w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="rectangle-width" placeholder="width">
+                            <input class="border w-24 pl-2 text-lg bg-gray-100" type="text"   id="rectangle-base" placeholder="width">
                             <span class="ml-2">cm</span>
-                            <input class="border ml-2 w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="rectangle-length" placeholder="length">
+                            <input class="border ml-2 w-24 pl-2 text-lg bg-gray-100" type="text"   id="rectangle-length" placeholder="length">
                             <span class="ml-2">cm</span>
                           </p>
-                          <p class="text-xl">Area: <span id="area-text-value">0</span> cm<sup>2</sup></p>
+                          <p class="text-xl">Area: <span id="rectangle-area">0</span> cm<sup>2</sup></p>
                           <div class="card-actions">
-                            <button onclick="calculateReactangleArea()" class="btn bg-blue-400 text-white w-full mt-4">Calculate</button>
+                            <button onclick="calculateRectangleArea()" class="btn bg-blue-400 text-white w-full mt-4">Calculate</button>
                           </div>
                         </div>
                       </div>
+                      <!-- Parallelogram card -->
                       <div class="card card-compact w-96 bg-base-100 border p-4">
                         <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
                         <div class="card-body text-center">
                           <h2 class="text-2xl text-center">Parallelogram</h2>
                           <p class="text-lg">  Area (A) = b * h</p>
                           <p>
-                            <input class="border w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="" placeholder="base">
+                            <input class="border w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="parallelogram-base" placeholder="base">
                             <span class="ml-2">cm</span>
-                            <input class="border ml-2 w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="" placeholder="height">
+                            <input class="border ml-2 w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="parallelogram-height" placeholder="height">
                             <span class="ml-2">cm</span>
                           </p>
-                          <p class="text-xl">Area: <span id="area-text-value">0</span> cm<sup>2</sup></p>
+                          <p class="text-xl">Area: <span id="parallelogram-area">0</span> cm<sup>2</sup></p>
                           <div class="card-actions">
-                            <button onclick="" class="btn bg-blue-400 text-white w-full mt-4">Calculate</button>
+                            <button onclick="calculateParallelogramArea()" class="btn bg-blue-400 text-white w-full mt-4">Calculate</button>
                           </div>
                         </div>
                       </div>
+                      <!-- Rhombus card -->
                       <div class="card card-compact w-96 bg-base-100 border p-4">
                         <figure><img src="/images/rhombus.png" alt="Shoes" /></figure>
                         <div class="card-body text-center">
                           <h2 class="text-2xl text-center">Rhombus</h2>
-                          <p class="text-lg">  Area (A) = 0.5 * b * h</p>
+                          <p class="text-lg">  Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub> </p>
                           <p>
-                            <input class="border w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="" placeholder="base">
+                            <input class="border w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="diagonal-one" placeholder="base">
                             <span class="ml-2">cm</span>
-                            <input class="border ml-2 w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="" placeholder="height">
+                            <input class="border ml-2 w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="diagonal-two" placeholder="height">
                             <span class="ml-2">cm</span>
                           </p>
+                          <p class="text-xl">Area: <span id="rhombus-area">0</span> cm<sup>2</sup></p>
                           <div class="card-actions">
-                            <button class="btn bg-blue-400 text-white w-full mt-4">Calculate</button>
+                            <button onclick="calculateRhombusArea()" class="btn bg-blue-400 text-white w-full mt-4">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -96,15 +99,16 @@
                         <figure><img src="/images/pentagon.png" alt="Shoes" /></figure>
                         <div class="card-body text-center">
                           <h2 class="text-2xl text-center">Pentagon</h2>
-                          <p class="text-lg">  Area (A) = 0.5 * b * h</p>
+                          <p class="text-lg">  Area (A) = 0.5 * p * b</p>
                           <p>
-                            <input class="border w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="" placeholder="base">
+                            <input class="border w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="p" placeholder="base">
                             <span class="ml-2">cm</span>
-                            <input class="border ml-2 w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="" placeholder="height">
+                            <input class="border ml-2 w-24 pl-2 text-lg bg-gray-100" type="text" name="" id="b" placeholder="height">
                             <span class="ml-2">cm</span>
                           </p>
+                          <p class="text-xl">Area: <span id="pentagon-area">0</span> cm<sup>2</sup></p>
                           <div class="card-actions">
-                            <button class="btn bg-blue-400 text-white w-full mt-4">Calculate</button>
+                            <button onclick="calculatePentagonArea()" class="btn bg-blue-400 text-white w-full mt-4">Calculate</button>
                           </div>
                         </div>
                       </div>

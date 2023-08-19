@@ -1,30 +1,82 @@
-function calculateTriangleArea(){
-    const baseField = document.getElementById('triangle-base');
-    const baseFieldValueString = baseField.value;
-    const baseFieldValue = parseFloat(baseFieldValueString);
-
-    const heightField = document.getElementById('triangle-height');
-    const heightFieldValueString = heightField.value;
-    const heightFieldValue = parseFloat(heightFieldValueString)
-
-    const area = (baseFieldValue * heightFieldValue * 0.5 ); 
-    const areaOfTriangle = document.getElementById('area-of-trianlge');
-    areaOfTriangle.innerText = area
+// getInputValue
+function getInputValue(inputId) {
+  const inputField = document.getElementById(inputId);
+  const inputFieldValueString = inputField.value;
+  const inputFieldValue = parseFloat(inputFieldValueString);
+  return inputFieldValue;
 }
-// calculate Reactangle Area
-function calculateReactangleArea(){
-    // get width field
-    const widthField = document.getElementById('rectangle-width');
-    const widthFieldValueString = widthField.value;
-    const widthFieldValue = parseFloat(widthFieldValueString)
 
-    // get length Field
-    const lengthField = document.getElementById('rectangle-length');
-    const lengthFieldValueString = lengthField.value;
-    const lengthFieldValue = parseFloat(lengthFieldValueString);
-
-    // area of reactangle
-    const area = widthFieldValue * lengthFieldValue;
-    const areaTextValue = document.getElementById('area-text-value');
-    areaTextValue.innerText = area;
+// set textvalue
+function setTextValue(textValueId, area){
+    const element = document.getElementById(textValueId);
+    element.innerText = area;
 }
+// triangle area
+function calculateTriangleArea() {
+  const base = getInputValue("triangle-base");
+  const height = getInputValue("triangle-height");
+  const area = base * height * 0.5;
+  setTextValue('triangle-area', area)
+}
+// Reactangle area
+function calculateRectangleArea(){
+    const base = getInputValue('rectangle-base');
+    const length = getInputValue('rectangle-length');
+    const area = base * length;
+    setTextValue('rectangle-area', area);
+}
+// para
+function calculateParallelogramArea(){
+    const base = getInputValue('parallelogram-base')
+    const height = getInputValue('parallelogram-height')
+    const area = base * height
+    setTextValue('parallelogram-area', area)
+}
+// rhombus
+function calculateRhombusArea(){
+    const diagonalOne = getInputValue('diagonal-one');
+    const diagonalTwo = getInputValue('diagonal-two');
+    const area = 0.5 * diagonalOne * diagonalTwo;
+    setTextValue('rhombus-area', area)
+}
+// pentagon 
+function calculatePentagonArea(){
+    const p = getInputValue('p')
+    const b = getInputValue('b')
+    const area = 0.5 * p * b;
+    setTextValue('pentagon-area', area)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* // calculate Reactangle Area
+function calculateReactangleArea() {
+  const width = getInputValue("reactangle-width");
+  const length = getInputValue("rectangle-length");
+  const area = width * length;
+  const areaTextValue = document.getElementById("area-text-value");
+  areaTextValue.innerText = area;
+}
+function calculateParallelogramArea(){
+    const base = document.getElementById('parallelogram-width')
+    console.log(base);
+    const height = document.getElementById('parallelogram-height');
+    console.log(height);
+    const area = base * height;
+    console.log(area);
+    setTextValue('parallelogram-area', area)
+} */
