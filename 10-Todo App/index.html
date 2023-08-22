@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .new-task{
+            text-align: center;
+            font-size: 20px;
+            color:#fff;
+            width: 45%;
+            margin: 0 auto; 
+        }
+        .inner-task{
+            background-color: #A1A5D7;
+            padding: 12px 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                bodyColor: '#27292D',
+                primaryColor: '#A1A5D7'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-bodyColor">
+    <header>
+        <h1 class="text-center text-4xl text-primaryColor font-semibold mt-8">My Daily Task<h1/>
+    </header>
+    <main class="container mx-auto px-4 mt-6">
+        <section class="w-9/12 mx-auto text-center">
+            <div>
+                <input id="task-input-field" type="text"  placeholder="Add Your New Task" class="border py-3 pl-2 rounded w-4/12">
+                <button id="add-task-btn" class="py-3 bg-primaryColor font-bold rounded rounded-l-none px-8">Add Task</button>
+            </div>
+
+            <!-- added new task -->
+            <div id="add-new-task-container" class="mt-5">
+                 
+            </div>
+        </section>
+    </main>
+    
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
