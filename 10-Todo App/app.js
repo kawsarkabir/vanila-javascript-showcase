@@ -8,5 +8,6 @@ document.getElementById('add-task-btn').addEventListener('click', ()=>{
     p.classList.add('inner-task')
     containerDiv.classList.add('new-task');
     p.innerText = taskInputValue;
+    taskInputField.value = ''
     containerDiv.appendChild(p)
 })
