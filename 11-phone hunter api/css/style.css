@@ -71,10 +71,32 @@ header{
     border-radius: 0.5rem;
     border: none;
     font-size: .9rem;
-    border: 1px solid #706F6F;
+    border: 1px solid #f2f2f2;
     width: 50%;
 }
 .input-box{
     text-align: center;
 }
- 
+
+/* card section style heree */
+.show-phone-section{
+    padding: 10px;
+    margin: 4rem 0;
+}
+.card{
+    border: 1px solid #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.card p{
+    margin: 10px 0;
+}
+.card h4{
+    margin-bottom: 10px;
+}
+.phone-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
