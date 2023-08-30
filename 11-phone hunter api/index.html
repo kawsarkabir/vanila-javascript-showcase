@@ -6,18 +6,22 @@
     <title>phone hunter</title>
     <!-- font aweeome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="./image/pngwing 1.png" type="image/x-icon">
     <!-- google font link -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-    <!-- css link here -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- responsive css  -->
-    <link rel="stylesheet" href="./css/responsive.css">
+     <!-- css link here -->
+     <link rel="stylesheet" href="./css/style.css">
+     <!-- responsive css  -->
+     <link rel="stylesheet" href="./css/responsive.css">
+    <!-- daisy ui and tailwindcss cdn link here -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="menu">
+        <div class="fullWebsite">
+            <div class="header-menu">
                 <h2>Hot Gadgets</h2>
                 <button class="sign-up">Sign Up</button>
             </div>
@@ -48,13 +52,13 @@
         </section>
         <!-- show dynamic phones section -->
         <section class="show-phone-section">
-           <div class="container">
+           <div class="fullWebsite">
             <div id="phone-container" class="phone-container">
                 
             </div>
             <!-- show all btn -->
-            <div id="showAll-btn" class="showAll-container hidden">
-                <button class="sign-up">Show All</button>
+            <div id="showAll-container" class="showAll-container hidden">
+                <button onclick="handleShowAll()" class="sign-up">Show All</button>
             </div>
 
             <!-- warning: not found. -->

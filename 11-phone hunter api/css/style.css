@@ -4,18 +4,22 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.container{
+.fullWebsite{
     max-width: 1280px;
     margin: 0 auto;
 }
 header{
     background: rgba(13, 110, 253, 0.05);
 }
-.menu{
+.header-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+}
+.header-menu h2{
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 .sign-up{
     padding: 0.8rem 2rem;
@@ -44,6 +48,7 @@ header{
 }
 .banner-section h1{
     font-size: 3rem;
+    font-weight: 600;
 }
 .img-feature{
     display: grid;
@@ -65,6 +70,8 @@ header{
 .search-bar h1{
     font-size: 3rem;
     text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 .search-bar input{
     padding: 0.8rem 2rem;
@@ -83,17 +90,26 @@ header{
     padding: 10px;
     margin: 4rem 0;
 }
-.card{
+.phone-card{
     border: 1px solid #f2f2f2;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
 }
-.card p{
+.phone-card img{
+    margin: 0 auto;
+}
+.phone-card p{
     margin: 10px 0;
 }
-.card h4{
-    margin-bottom: 10px;
+.phone-card h3{
+    margin: 10px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.phone-card h4{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 .phone-container{
     display: grid;
