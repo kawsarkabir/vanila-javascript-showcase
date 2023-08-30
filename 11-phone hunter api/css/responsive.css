@@ -68,3 +68,18 @@
         gap: 10px;
     }
 }
+
+/* show phone dynamic responsive desing for mobile device */
+@media screen and (max-width:480px) {
+    .phone-container{
+        grid-template-columns: 1fr;
+      
+    }
+}
+/* show phone dynamic responsive desing for tablet device */
+@media screen and (max-width:768px) {
+    .phone-container{
+        grid-template-columns: 1fr 1fr;
+      
+    }
+}
