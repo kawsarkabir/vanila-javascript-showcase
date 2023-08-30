@@ -1,0 +1,52 @@
+/* mobile divice for responsive in banner section style here */
+@media screen and (max-width:480px) {
+    .menu{
+        justify-content: center;
+        flex-direction: column;
+        gap:10px
+
+    }
+    .banner-section{
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        margin-top: 30px;
+        
+    }
+    .banner-section h1{
+        font-size: 2rem;
+    }
+    .img-feature{
+        grid-template-columns: 1fr;
+    }
+    .img-position{
+        position: static;
+        top:0;
+    }
+}
+/* tablet device for banner section style here */
+@media screen and (max-width:768px) {
+    .banner-section{
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        margin-top: 30px;
+        
+    }
+    .banner-section h1{
+        font-size: 2rem;
+    }
+    .img-feature{
+        grid-template-columns:1fr 1fr;
+    }
+    .img-feature img{
+        max-width: 100%;
+    }
+    .img-item{
+        margin-left: 50%;
+    }
+    .img-position{
+        position: static;
+        top:0;
+    }
+}

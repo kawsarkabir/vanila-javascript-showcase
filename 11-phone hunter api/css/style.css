@@ -15,7 +15,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 .sign-up{
     padding: 0.8rem 2rem;
@@ -47,4 +47,8 @@ header{
     gap: .5rem;
     justify-content: center;
     align-items: center;
+}
+.img-position{
+    position: relative;
+    top: 5rem;
 }
