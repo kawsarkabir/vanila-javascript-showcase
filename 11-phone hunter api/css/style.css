@@ -100,3 +100,17 @@ header{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+/* warning not phone found */
+.warning-phones{
+    text-align: center;
+    font-size: 40px;
+    color: red;
+}
+.showAll-container{
+    text-align: center;
+    margin-top: 3rem;
+}
+.hidden{
+    display: none;
+}
