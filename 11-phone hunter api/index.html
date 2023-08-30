@@ -1,80 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>phone hunter</title>
     <!-- font aweeome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="shortcut icon" href="./image/pngwing 1.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./image/pngwing 1.png"
+      type="image/x-icon"
+    />
     <!-- google font link -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-     <!-- css link here -->
-     <link rel="stylesheet" href="./css/style.css">
-     <!-- responsive css  -->
-     <link rel="stylesheet" href="./css/responsive.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link here -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- responsive css  -->
+    <link rel="stylesheet" href="./css/responsive.css" />
     <!-- daisy ui and tailwindcss cdn link here -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="fullWebsite">
-            <div class="header-menu">
-                <h2>Hot Gadgets</h2>
-                <button class="sign-up">Sign Up</button>
-            </div>
-            <div class="banner-section">
-             <div class="banner-disc">
-                <h1>Apple Iphone 13 Pro Max</h1>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
-                <button class="sign-up">Buy Now</button>
-            </div>
-            <div class="banner-img">
-                <div class="img-feature">
-                    <img class="img-position" src="./image/pngwing 1.png" alt="">
-                    <img src="./image/pngwing 1.png" alt="">
-                    <img class="img-item img-position" src="./image/pngwing 1.png" alt="">
-                </div>
-            </div>
-           </div>
+      <div class="fullWebsite">
+        <div class="header-menu">
+          <h2>Hot Gadgets</h2>
+          <button class="sign-up">Sign Up</button>
         </div>
+        <div class="banner-section">
+          <div class="banner-disc">
+            <h1>Apple Iphone 13 Pro Max</h1>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humou.
+            </p>
+            <button class="sign-up">Buy Now</button>
+          </div>
+          <div class="banner-img">
+            <div class="img-feature">
+              <img class="img-position" src="./image/pngwing 1.png" alt="" />
+              <img src="./image/pngwing 1.png" alt="" />
+              <img
+                class="img-item img-position"
+                src="./image/pngwing 1.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-        <!-- searchbar part -->
-        <section class="search-bar">
-            <div><h1>Search your phone</h1></div>
-            <div class="input-box">
-                <input id="search-field" type="text"  placeholder="Search Your Phone">
-                <button onclick="handleSearchBtn()" class="sign-up">Search</button>
-            </div>
-        </section>
-        <!-- show dynamic phones section -->
-        <section class="show-phone-section">
-           <div class="fullWebsite">
-            <div id="phone-container" class="phone-container">
-                
-            </div>
-            <!-- show all btn -->
-            <div id="showAll-container" class="showAll-container hidden">
-                <button onclick="handleShowAll()" class="sign-up">Show All</button>
-            </div>
+      <!-- searchbar part -->
+      <section class="search-bar">
+        <div><h1>Search your phone</h1></div>
+        <div class="input-box">
+          <input
+            id="search-field"
+            type="text"
+            placeholder="Search Your Phone"
+          />
+          <button onclick="handleSearchBtn()" class="sign-up">Search</button>
+        </div>
+      </section>
+      <!-- show dynamic phones section -->
+      <section class="show-phone-section">
+        <div class="fullWebsite">
+          <div id="phone-container" class="phone-container"></div>
+          <!-- show all btn -->
+          <div id="showAll-container" class="showAll-container hidden">
+            <button onclick="handleShowAll()" class="sign-up">Show All</button>
+          </div>
 
-            <!-- warning: not found. -->
-            <div id="not-found-massage" class="warning-phones hidden">
-                <h3>No Phone Found. Please try again new search</h3>
-            </div>
-           </div>
-        </section>
+          <!-- warning: not found. -->
+          <div id="not-found-massage" class="warning-phones hidden">
+            <h3>No Phone Found. Please try again new search</h3>
+          </div>
+        </div>
+      </section>
 
+      <!-- modal section -->
+      <section>
+        <div class="fullWebsite">
+          <!-- <button class="sign-up" onclick="">Show Details</button> -->
+          <dialog
+            id="show_details_modal"
+            class="modal modal-bottom sm:modal-middle"
+          >
+            <form method="dialog" class="modal-box">
+              <div id="show-details-content" class="show-details-content"></div>
+              <div class="modal-action justify-center">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </div>
+            </form>
+          </dialog>
+        </div>
+      </section>
+
+      <!-- hot gadget section with social icon -->
+      <section class="hot-gadget">
+        <div class="fullWebsite">
+            <div class="flex items-center gap-3 text-center md:flex-row md:text-left justify-between flex-col mb-10">
+                <div class="hot-gadget-title">
+                    <h1 class="text-3xl font-semibold">Hot Gadgets</h1>
+                    <small>You can definitely work.</small>
+                </div>
+                <div class="gadget-social-icon">
+                    <div>
+                        <i class="fa-brands fa-facebook text-blue-500"></i>
+                        <i class="fa-brands fa-twitter text-blue-500"></i>
+                        <i class="fa-brands fa-instagram text-red-500"></i>
+                    </div>
+                    <button class="sign-up text-semibold">Join Premium</button>
+                </div>
+            </div>
+            <p class="emtry-border"></p>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-    
-
+    <footer class="px-5">
+        <div class="fullWebsite footer justify-between pb-5 grid-cols-1	md:grid-cols-4 lg:grid-cols-4 justify-items-center lg:justify-items-start">
+            <div>
+                <span class="footer-title">Services</span> 
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+              </div> 
+              <div>
+                <span class="footer-title">Company</span> 
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+              </div> 
+              <div>
+                <span class="footer-title">Legal</span> 
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Cookie policy</a>
+                <a class="link link-hover">Cookie policy</a>
+                <a class="link link-hover">Cookie policy</a>
+              </div>
+              <div>
+                <span class="footer-title">Legal</span> 
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+                <a class="link link-hover">Cookie policy</a>
+              </div>
+        </div>
+      </footer>
 
     <script src="./js/app.js"></script>
-</body>
+  </body>
 </html>

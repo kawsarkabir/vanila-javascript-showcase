@@ -40,7 +40,7 @@ const showPhones = (phones, isShowAll) =>{
         <h3>${phone.phone_name}</h3>
         <p>There are many variations of passages of available, but the majority have suffered</p>
         <h4>$999</h4>
-        <button onclick="handleShowDetail('${phone.slug}')" class="sign-up">Show Details</button>
+        <button onclick="handleShowDetail('${phone.slug}');show_details_modal.showModal()" class="sign-up">Show Details</button>
         `
         phoneCardContainer.appendChild(phoneCard)
     });
@@ -57,6 +57,16 @@ const handleShowDetail = async (id)=>{
 // displayShowDetails individual items
 const displayShowDetails = (phone) =>{
     console.log(phone);
+    const showDetailContent = document.getElementById('show-details-content');
+    showDetailContent.innerHTML =`
+    <img src = "${phone.image}">
+    <h4>${phone.name}</h4>
+    <P>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</P>
+    <h4><span>Storage:</span>${phone?.mainFeatures?.storage}</h4>
+    <h4><span>GPS:</span>${phone.others?.GPS || 'No GPS available'}</h4>
+    <h4><span>GPS:</span>${phone.others?.GPS ? phone.others.GPS : 'No GPS available in this device'}</h4>
+    `
+    
 }
 
 // handle search btn

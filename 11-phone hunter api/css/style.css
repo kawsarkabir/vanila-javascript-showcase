@@ -130,3 +130,43 @@ header{
 .hidden{
     display: none;
 }
+
+/* modal style here */
+.show-details-content img{
+    max-width: 30%;
+    margin: 0 auto;
+}
+.show-details-content h4{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+/* hot gadget section  */
+.hot-gadget{
+    background: rgba(13, 110, 253, 0.05);
+    margin-top: 20px 0;
+    padding: 4rem;
+}
+.gadget-social-icon{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.gadget-social-icon i{
+    font-size: 1.5rem;
+    background: #ffffff;
+    box-shadow: 1px 1px 3px #e3e3e3;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+}
+.emtry-border{
+    border-bottom: 1px solid #ddd;
+    margin-top: 20px;
+}
+footer{
+    background: rgba(13, 110, 253, 0.05);
+}

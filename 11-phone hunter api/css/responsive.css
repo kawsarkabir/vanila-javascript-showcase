@@ -80,6 +80,5 @@
 @media screen and (max-width:768px) {
     .phone-container{
         grid-template-columns: 1fr 1fr;
-      
     }
 }
