@@ -24,6 +24,10 @@ header{
     border-radius: 0.5rem;
     border: none;
     font-size: .9rem;
+    transition: .5s;
+}
+.sign-up:hover{
+    background-color: rgb(24, 24, 104);
 }
 
 /* banner sectiono style here */
@@ -52,3 +56,25 @@ header{
     position: relative;
     top: 5rem;
 }
+
+/* search bar section*/
+.search-bar{
+    margin: 3rem 0;
+    padding: 10px;
+}
+.search-bar h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.search-bar input{
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: .9rem;
+    border: 1px solid #706F6F;
+    width: 50%;
+}
+.input-box{
+    text-align: center;
+}
+ 

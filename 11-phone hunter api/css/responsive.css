@@ -50,3 +50,21 @@
         top:0;
     }
 }
+
+/* search bar mobile device responsive style hree style */
+@media screen and (max-width:480px) {
+    .search-bar h1{
+        font-size: 2rem;
+        
+    }
+    .search-bar input{
+        width: 100%;
+    }
+    .input-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
