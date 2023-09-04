@@ -20,6 +20,16 @@ https://simple-shopping-carts.netlify.app
 ### Demo 08-Pin Matcher
 https://pin-matchers.netlify.app
  
+### Demo 09-Geometry Area Calculate
+https://geometry-area-calculate.netlify.app/
+
+### Demo 10-Todo App
+
+### Demo 11-Phone Hundter Ecommers
+https://phone-hunter-ecommers.netlify.app/
+
+### Demo 12-Summer Sale Product
+https://summer-sale-demo.netlify.app/
 
 
 ## 🚀 About Me

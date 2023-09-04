@@ -1,0 +1,36 @@
+assignment all requirement
+
+1. ekta meaningful name dite hobe. news related
+2. ekta navbar thakbe. minimum 2 ta option thakbe. ekta user image.
+3. navbar er niche jei category ache segulu dekhate hobe dynamically, exact same name dite hobe category gulor. 
+4. news related jei data gula ache, seigula exact same data gual dekhate hobe.
+5. news er kuthao ekta details button thakbe, sekhane click korle, sei news er data gula ekta modal a open hobe.
+6. jodi kono news er kono data availave na thake, tahole sekhane, "no data available" dekhate hobe. 
+7. website title must
+8. kono news er description jodi beshi boro hoye jaay, tahole seta chuto krote hobe and (...) eta use korte hobe. 
+
+
+bonus mark : 
+1. data load howar somoy site a ekta spinner add korte hobe.
+2. prottekta category te koto gula news ache, segulu dekhaite hobe. 
+3. jodi data na thake, tahole 'no news fouond dekhate hobe'
+4. code a es6 er arrow function, forEach etc use korte hobe.
+5. api load korar error handeling thakte hobe.
+6. jekono css library use kora jaaabe.
+7. site responsive korte hobe. 
+8. array sort out, jei news er views sobcheye beshi thakbe, sei news ta first a dekhabe.
+
+
+another topic for bonus :
+navbar a blog option a click korle, 4 ta question er ans dewa thakbe.
+1. deffernce in let, var, const
+2. deffernce between arrow function and regular function.
+3. map, forEach, filter, find eigular moddhe diffence ki?
+4. explain, advantage of template string.
+5. minimum 10 ta commit korte hobe, github a. 
+
+
+submission : 
+1. private repositoryr link submit korte hobe.
+2. netlify er live link dite hobe. (netlify kaj na korle, onno kuthaw er ta, tobe live link must ditei hobe.).
+
