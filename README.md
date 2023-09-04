@@ -22,9 +22,6 @@ https://pin-matchers.netlify.app
  
 ### Demo 09-Geometry Area Calculate
 https://geometry-area-calculate.netlify.app/
-
-### Demo 10-Todo App
-
 ### Demo 11-Phone Hundter Ecommers
 https://phone-hunter-ecommers.netlify.app/
 
