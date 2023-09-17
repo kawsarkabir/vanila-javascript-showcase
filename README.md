@@ -1,4 +1,4 @@
-## KAWSAR KABIR - JavaScript Project (DOM) For Beginner 
+## KAWSAR KABIR - JavaScript Project (DOM) For Beginners
 
 In this repository, you will find source codes, explanations, live demo and other resources for 50+ project with javascript for beginner.If you are beginner in javascript, you can follow this repository.
 
