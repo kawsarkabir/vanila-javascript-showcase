@@ -25,7 +25,7 @@ git clone https://github.com/kawsarkabir/vanila-javascript-showcase.git
 # Navigate to the project folder
 cd vanila-javascript-showcase
 
-# Run a specific project (replace 'project-name' with the actual folder name like 01-guns-shop)
+# Run a specific project (replace 'project-name' with the actual folder name)
 cd project-name
 npm i
 npm run dev
