@@ -16,7 +16,7 @@
 
 <!-- Insructions -->
 
-### Instructions
+## Instructions
 
 ```bash
 # Clone the repository
@@ -31,7 +31,7 @@ npm i
 npm run dev
 ```
 
-### About Me
+## About Me
 
 A passionate web developer with a strong skill set in JavaScript, React.js, Redux, TypeScript, NexjJS. I&lsquo;m dedicated to crafting visually stunning and highly responsive websites with a keen eye for details and a commitment to clean, efficient code, I specialize in creating web experiences that leave a lasting impression.
 
